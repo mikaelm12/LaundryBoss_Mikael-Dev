@@ -1,0 +1,6 @@
+A list of additions/changes we need to do, prefixed with the date
+
+6/27/13- 
+*background updating of the machines -DONE
+*reliably build the mobile app
+*

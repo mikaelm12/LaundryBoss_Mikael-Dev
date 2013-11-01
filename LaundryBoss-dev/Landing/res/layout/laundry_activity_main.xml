@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity"
+                android:background="@drawable/laundry_main_repeat">
+
+    <Button
+            android:id="@+id/bGotoAllDormView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose a dorm!"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"/>
+
+    <TextView
+            android:id="@+id/tvStandInForCardview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9pt"
+            android:text="Click on the icons below to see how much time is left on your washer or dryer cycles"
+            android:layout_below="@+id/bGotoAllDormView"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/mit_grey"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:src="@drawable/laundry_boss_icon_xhdpi"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/tvTitleGV"
+            android:paddingRight="6dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Laundry@MIT"
+            android:id="@+id/tvTitleGV"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_alignLeft="@+id/bGotoAllDormView"
+            android:layout_marginBottom="13dp"
+            android:textColor="@color/mit_grey"/>
+
+    <GridView
+            android:paddingTop="100px"
+            android:paddingLeft="200px"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gridView"
+            android:layout_below="@+id/tvStandInForCardview"
+            android:layout_centerHorizontal="true"
+            android:numColumns="auto_fit"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:orientation="vertical" >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:background="@drawable/laundry_google_now_card"
+                android:layout_marginLeft="@dimen/spacing"
+                android:layout_marginRight="@dimen/spacing"
+                android:layout_marginTop="@dimen/spacing">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivMachineIconGV"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/laundry_in_use_washer"
+            android:layout_centerHorizontal="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Machine "
+            android:id="@+id/tvMachineNameGV"
+            android:layout_below="@+id/ivMachineIconGV"
+            android:textColor="@android:color/black"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:id="@+id/tvMachineNumberGV"
+            android:layout_toRightOf="@+id/tvMachineNameGV"
+            android:layout_below="@+id/ivMachineIconGV"
+            android:textColor="@android:color/black"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5:49"
+            android:id="@+id/tvMachineCountDown"
+            android:layout_below="@+id/tvMachineNameGV"
+            android:textColor="@color/holo_green_dark"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"/>
+
+
+</RelativeLayout>
+</RelativeLayout>

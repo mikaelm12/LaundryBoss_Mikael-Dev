@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/laundry_google_now_card" >
+
+    <View
+        android:id="@+id/vSpacer2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textView1"
+        android:background="@color/holo_green_dark" 
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/holo_blue_light"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/spacing"
+        android:text="Machine finished!"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/bStopAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vSpacer2"
+        android:layout_centerHorizontal="true"
+        android:text="Stop Alarm!" />
+
+</RelativeLayout>

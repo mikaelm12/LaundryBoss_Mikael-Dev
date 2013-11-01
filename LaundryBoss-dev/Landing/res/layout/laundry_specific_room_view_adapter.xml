@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/vSpacer"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/spacing" />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vSpacer"
+        android:layout_marginLeft="@dimen/spacing_sides"
+        android:layout_marginRight="@dimen/spacing_sides"
+        android:background="@drawable/laundry_selectable_google_now_card" >
+
+        <ImageView
+            android:id="@+id/ivMachineIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="@dimen/spacing"
+            android:src="@drawable/laundry_available_dryer" />
+
+        <TextView
+            android:id="@+id/tvMachineName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ivMachineIcon"
+            android:paddingTop="@dimen/spacing"
+            android:text="Machine Name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/mit_grey" />
+
+        <TextView
+            android:id="@+id/tvMachineStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMachineName"
+            android:layout_toRightOf="@+id/ivMachineIcon"
+            android:text="Status"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/mit_grey" />
+
+        <TextView
+            android:id="@+id/tvMachineNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvMachineName"
+            android:layout_toRightOf="@+id/tvMachineName"
+            android:paddingLeft="5dp"
+            android:text="06"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/mit_grey" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/laundry_navigation_next_item" />
+    </RelativeLayout>
+
+</RelativeLayout>

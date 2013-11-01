@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <CheckBox
+        android:id="@+id/cbNotifyAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbNotifyVibrate"
+        android:layout_below="@+id/cbNotifyVibrate"
+        android:text="with an alarm" />
+
+    <TextView
+        android:id="@+id/tvSaysReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cbNotifyAlarm"
+        android:layout_marginTop="29dp"
+        android:text=" REMINDERS"
+        android:textColor="#669900" />
+
+    <Spinner
+        android:id="@+id/spNotifyWhen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvSaysReminder" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text=" ALERTS"
+        android:textColor="#33B5E5" />
+
+<!--     <CheckBox
+        android:id="@+id/cbNotifyWhenFinished"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:text="when finished" /> -->
+
+    <CheckBox
+        android:id="@+id/cbNotifyVibrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:text="with a vibration" />
+
+</RelativeLayout>

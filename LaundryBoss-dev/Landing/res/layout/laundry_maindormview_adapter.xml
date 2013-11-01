@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/vSpacer"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/spacing" />
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vSpacer"
+        android:layout_marginLeft="@dimen/spacing_sides"
+        android:layout_marginRight="@dimen/spacing_sides"
+        android:background="@drawable/laundry_selectable_google_now_card" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/spacing"
+            android:src="@drawable/laundry_navigation_next_item" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageView1"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing" >
+
+            <TextView
+                android:id="@+id/tvDormStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X Washers"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/mit_grey" />
+
+            <TextView
+                android:id="@+id/tvNumDryers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X Dryers"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/mit_red" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDormName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/spacing"
+            android:text="Edgerton House Right"
+            android:textSize="15sp"
+            android:textColor="#111111" />
+    </RelativeLayout>
+
+</RelativeLayout>

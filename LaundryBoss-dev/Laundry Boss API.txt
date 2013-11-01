@@ -1,0 +1,31 @@
+A list of the different api calls of the IS&T api 
+
+//good reference for viewing json strings
+http://json.parser.online.fr/
+
+//java iterator methods
+http://www.tutorialspoint.com/java/java_using_iterator.htm
+http://mobile-dev.mit.edu/api/?module=laundry&call=getRoomData      //all room data
+
+//room monitor. location is the room ID
+http://mobile-dev.mit.edu/api/?module=laundry&call=getRoomDetails&location=1364813    
+
+//specific machine monitor. appliance_desc_key is the machine ID
+http://mobile-dev.mit.edu/api/?module=laundry&call=getStatus&appliance_desc_key=19378   
+
+
+
+
+
+
+
+////////////machine cases from the api  ---  11:31 AM Thursday, August 1, 2013
+"specfic machine || machine ended recently" ->{"status":"Available","out_of_service":"0","time_remaining":"cycle ended 22 minutes ago"}
+"specfic machine || machine is available" ->{"status":"Available","out_of_service":"0","time_remaining":"available"}
+"specfic machine || machine is in use" ->{"status":"In Use","out_of_service":"0","time_remaining":"est. time remaining 9 min"}
+"all machines || machine in use" ->{"15787":{"appliance_desc_key":"15787","lrm_status":"Online","appliance_type":"WASHER","out_of_service":"0","label":"01","time_remaining":"est. time remaining 17 min"}
+"all machines || machine recently ended" ->"15814":{"appliance_desc_key":"15814","lrm_status":"Online","appliance_type":"DRYER","out_of_service":"0","label":"28","time_remaining":"cycle ended 20 minutes ago"}
+
+///api notes
+- "status" only appears from the specific machine calls
+
