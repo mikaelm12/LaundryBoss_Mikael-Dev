@@ -45,7 +45,7 @@
 
     <GridView
             android:paddingTop="100px"
-            android:paddingLeft="200px"
+            android:paddingLeft="150px"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/gridView"
